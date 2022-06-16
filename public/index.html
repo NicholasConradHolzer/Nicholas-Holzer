@@ -2,42 +2,233 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    
+    <title>Nicholas Holzer</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+            <div id="heroBack">
+              <img class="chapterSize" src="assets/images/TreesBG.jpg">
+            </div>
+          
+              <header>
+                  <!-- <img src="./assets/images/hero.jpg" alt="Nicholas Holzer on a Sunny Day"> -->
+                  <nav>
+                      <ul>
+                          <li>
+                              <a href="#about-nick">About Me</a>
+                          </li>
+                          <li>
+                              <a href="#work-samples-nick">My Work Samples</a>
+                          </li>
+                          <li>
+                              <a href="#contact-nick">Contact Me</a>
+                          </li>
+                      </ul>
+                  </nav>
+              </header>
+          
+          <div id="hero" class="chapterSize">
+              <div id="moodSet">
+                  <h1>
+                      <a id="selfTitle" href="index.html">
+                          Nicholas Holzer
+                      </a>
+                  </h1>
+                  <img src="assets/images/FtLewisNick.jpg">
+                  <div id="moodCard" class="carderizer">
+                      <ul>
+                          <li>Front End Web Developer</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!-- <div id="bgGreet"></div> -->
+                  <!-- <div class="backText fullWide chapterSize">
+                      <p>
+                          Using a Diverse Career History<br/>
+                          to Deploy Versatility in<br/>
+                          Problem Solving
+                      </p>
+                  </div> -->
+          <main>
+              <!--About Section-->
+              <section id="about-nick" class="chapterSize">
+          
+                  <h2>
+                      About Me
+                  </h2>
+                  <div id="aboutCard">
+                          
+                      <div class="about-pic">
+                          <img src="./assets/images/hero.jpg">
+                      </div>
+                      <div class="info-box">
+                          <article>
+                              <p>
+                                  My Name is Nicholas Holzer; a student of Website Development, and Computing Technology Enthusiast.<br/>
+                                  My longterm goals include development of my own app systems and breaking ground in new AI cognizing methods.<br/>
+                                  Thank you very much for checking out my portfolio today; enjoy your visit, and <br/>
+                                  reach out if you like what you see!
+                              </p>
+                          </article>
+                      </div>
+                  </div>
+          
+              </section>
+          
+          
+              <!--Work Sample Section-->
+              <section id="work-samples-nick" class="work-display chapterSize">
+          
+                  <div id="samplesHolder">
+                      <h2 class="section-title">
+                          My Work Samples
+                      </h2>
+                  </div>
+                  <div id="projectHolder">
+                      <!--
+                      <figure class="project-panel">
+                          <h3></h3>
+                          <div class="projectPortal">
+                              <a href="">
+                                  <img src="./assets/images/" 
+                                  alt="">
+                              </a>
+                          </div>
+                          <figcaption></figcaption>
+                      </figure>
+                      -->
+                      <figure class="project-panel">
+                          <h3>
+                              Fanpage: Nyango-Starr
+                          </h3>
+                          <div class="projectPortal">
+                              <a href="https://nicholasconradholzer.github.io/NHolzerNyangoStarr/">
+                                  <img src="./assets/images/project-nyango.png" 
+                                  alt="Fanpage for Nyango-Starr; pic acts as link">
+                              </a>
+                          </div>
+                          <figcaption>A Fanpage for Japanese Mascot/Drummer/Apple-Cat Nyango Starr; featuring embedded youtube video as a background color for the site.</figcaption>
+                      </figure>
+          
+                      <figure class="project-panel">
+                          <h3>
+                              My "Watch-the-Box" Page
+                          </h3>
+                          <div class="projectPortal">
+                              <a href="https://nicholasconradholzer.github.io/boxManipulator/">
+                                  <img src="./assets/images/project-box.PNG" 
+                                  alt="">
+                              </a>
+                          </div>
+                          <figcaption>A "Watch-the-Box" page; with buttons that use javascript to directly alter the CSS styling of a colored-box</figcaption>
+                      </figure>
+          
+                      <figure class="project-panel">
+                          <h3>
+                              Homepage+Privacy Policy: Run-Buddy, Inc.
+                          </h3>
+                          <div class="projectPortal">
+                              <a href="https://nicholasconradholzer.github.io/run-buddy/">
+                                  <img src="./assets/images/project-runbuddy.PNG" 
+                                  alt="">
+                              </a>
+                          </div>
+                          <figcaption>The homepage and privacy policy page of Run-Buddy, Inc., featuring advanced applications of CSS for both user responsiveness and screensize-disparity formatting.</figcaption>
+                      </figure>
+          
+                      <figure class="project-panel">
+                          <h3>
+                              Homepage: Horiseon, Inc.
+                          </h3>
+                          <div class="projectPortal">
+                              <a href="https://nicholasconradholzer.github.io/Horiseon-refactored.home/">
+                                  <img src="./assets/images/project-horiseon.PNG" 
+                                  alt="">
+                              </a>
+                          </div>
+                          <figcaption>The homepage for Horiseon, Inc.; refactored for accsesability, development ease-of-use, and corrective-debugging.</figcaption>
+                      </figure>
+                  </div>
+              </section>
+          
+              <!--Contact Section-->
+              <section class="contact chapterSize">
+          
+                  <div id="contact-nick">
+                      <h2 class="section-title">
+                          Contact Me
+                      </h2>
+                  </div>
+          
+                  <article class="contact-links">
+                      <h3>
+                          Contact Links
+                      </h3>
+                      <ul>
+                          <li>
+                              <a href="https://github.com/NicholasConradHolzer">
+                                  GitHub
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.linkedin.com/in/nicholas-holzer-538917123/">
+                                  LinkedIn
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.facebook.com/nicholas.holzer.56/">
+                                  Facebook
+                              </a>
+                          </li>
+                      </ul>
+                  </article>
+          
+                  <div class="contact-form">
+                      <h3>
+                          Send Me an Email
+                      </h3>
+                      <form class="" action="mailto:nicholasch96@gmail.com" method="post" enctype="text/plain">
+                              
+                          <label>Your Name:</label>
+                          <input type="text" name="yourName" /><br />
+                              
+                          <label>Your Email:</label>
+                          <input type="email" name="yourEmail" /><br />
+                              
+                          <label>Your Message:</label><br />
+                          <textarea name="yourMessage" cols="30" rows="10"></textarea><br />
+                          <input type="submit" />
+                      </form>
+                  </div>
+                  
+          
+              
+              </section>
+          </main>
+              <footer>
+                  <h2>Made by Nicholas Holzer for use only by self.</h2>
+                  <div>
+                      <p>Access <a href="./privacy-policy.html">ReadMe</a></p>
+                  </div>
+              </footer>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
+	<script type="text/javascript"
+					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function(){
+				emailjs.init("K7vZ6jWYaMjTVM59J");
+		})();
+	</script>
 </html>
+
