@@ -1,0 +1,512 @@
+/* 
+Colbalt
+Let vcolorcobalt1 = 'RGB(20,53,86)';
+Let vcolorcobalt2 = 'RGB(30,80,130)';
+Let vcolorcobalt3 = 'RGB(39,106,173)';
+Let vcolorcobalt4 = 'RGB(56,133,209)';
+Let vcolorcobalt5 = 'RGB(100,159,219)';
+Let vcolorcobalt6 = 'RGB(142,186,230)';
+Let vcolorcobalt7 = 'RGB(186,213,239)';
+Let vcolorcobalt8 = 'RGB(221,234,247)';
+
+//glacier
+Let vcolorglacier1 = 'RGB(33,56,73)';
+Let vcolorglacier2 = 'RGB(50,84,109)';
+Let vcolorglacier3 = 'RGB(66,113,147)';
+Let vcolorglacier4 = 'RGB(87,139,179)';
+Let vcolorglacier5 = 'RGB(123,165,196)';
+Let vcolorglacier6 = 'RGB(160,190,211)';
+Let vcolorglacier7 = 'RGB(197,215,228)';
+Let vcolorglacier8 = 'RGB(226,235,241)';
+
+//coco
+Let vcolorcoco1 = 'RGB(63,53,44)';
+Let vcolorcoco2 = 'RGB(94,79,66)';
+Let vcolorcoco3 = 'RGB(125,105,87)';
+Let vcolorcoco4 = 'RGB(158,137,118)';
+Let vcolorcoco5 = 'RGB(175,158,143)';
+Let vcolorcoco6 = 'RGB(198,185,174)';
+Let vcolorcoco7 = 'RGB(220,213,205)';
+Let vcolorcoco8 = 'RGB(237,234,231)';
+
+//gray
+Let vcolorgray1 = 'RGB(53,53,53)';
+Let vcolorgray2 = 'RGB(79,79,79)';
+Let vcolorgray3 = 'RGB(106,106,106)';
+Let vcolorgray4 = 'RGB(132,132,132)';
+Let vcolorgray5 = 'RGB(159,159,159)';
+Let vcolorgray6 = 'RGB(185,185,185)';
+Let vcolorgray7 = 'RGB(212,212,212)';
+Let vcolorgray8 = 'RGB(233,233,233)';
+
+//sage
+Let vcolorsage1 = 'RGB(49,57,49)';
+Let vcolorsage2 = 'RGB(73,86,73)';
+Let vcolorsage3 = 'RGB(98,115,98)';
+Let vcolorsage4 = 'RGB(123,142,123)';
+Let vcolorsage5 = 'RGB(152,167,152)';
+Let vcolorsage6 = 'RGB(181,191,181)';
+Let vcolorsage7 = 'RGB(209,216,209)';
+Let vcolorsage8 = 'RGB(232,236,232)'; 
+
+--main-bg-color: brown;
+*/
+
+
+:root {
+--sage: RGB(209,216,209);
+--sage2: RGB(152,167,152);
+--sage3: RGB(98,115,98);
+--sage4: RGB(49,57,49);
+--gray: RGB(212,212,212);
+--gray2: RGB(159,159,159);
+--gray3: RGB(106,106,106);
+--gray4: RGB(53,53,53);
+--coco: RGB(220,213,205);
+--coco2: RGB(175,158,143);
+--coco3: RGB(125,105,87);
+--coco4: RGB(63,53,44);
+--glacier: RGB(197,215,228);
+--glacier2: RGB(123,165,196);
+--glacier3: RGB(66,113,147);
+--glacier4: RGB(33,56,73);
+--cobalt: RGB(186,213,239);
+--cobalt2: RGB(100,159,219);
+--cobalt3: RGB(39,106,173);
+--cobalt4: RGB(20,53,86);
+}
+/**/
+
+/*Full Page and Universals*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+max-width: 100%;
+overflow-x: hidden;
+position: relative;
+}
+body {
+    background-color: var(--bg);
+    position: relative;
+    font-family: Helvetica, Tahoma, sans-serif;
+    text-decoration: none;
+}
+/* #pallete p {
+    font-size: 14pt;
+}
+.step1 {
+    position: absolute;
+    top:70px;
+    max-width: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+}
+.step2 {
+    position: absolute;
+    top:130px;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+.step3 {
+    position: absolute;
+    top:180px;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+}
+.bit0 {
+    position: absolute;
+    display: inline-block;
+    max-width: 70px;
+    max-height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    z-index: 9999;
+} */
+
+/* .bit1 {
+    background-color: var(--coco4);
+}.cocolo1{background-color: var(--coco3);}
+.cocolo2{background-color: var(--coco2);}
+.cocolo3{background-color: var(--coco);}
+.bit2 {
+    left: 75px;
+    background-color: var(--sage4);
+}.sagelo1{background-color: var(--sage3);}
+.sagelo2{background-color: var(--sage2);}
+.sagelo3{background-color: var(--sage);}
+.bit3 {
+    left: 150px;
+    background-color: var(--gray4);
+}.graylo1{background-color: var(--gray3);}
+.graylo2{background-color: var(--gray2);}
+.graylo3{background-color: var(--gray);}
+.bit4 {
+    left: 225px;
+    background-color: var(--glacier4);
+}.glacierlo1{background-color: var(--glacier3);}
+.glacierlo2{background-color: var(--glacier2);}
+.glacierlo3{background-color: var(--glacier);}
+.bit5 {
+    left: 300px;
+    background-color: var(--cobalt4);
+}.cobaltlo1{background-color: var(--cobalt3);}
+.cobaltlo2{background-color: var(--cobalt2);}
+.cobaltlo3{background-color: var(--cobalt);} */
+
+h1, h2, h3, h4 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.chapterSize {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.fullWide {
+    min-width: 100vw;
+    max-width: 100vw;
+}
+.section-title {
+    color: var(--cobalt3);
+    text-shadow: 0 0 3px var(--cobalt4);
+    font-family: 'Gill Sans MT','Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 9.5vh auto 0vh auto;
+    font-size: 7vh;
+}
+/**/
+
+
+/*Header and Navigation*/
+header {
+    position: relative;
+    margin-top: 10px;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var();
+    padding: 15px 35px;
+    background-color: var(--glacier);
+    background-image: url("../images/TreesBG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 50%;
+    border-bottom-right-radius: 34%;
+    border-bottom-left-radius: 34%;
+    z-index: 9999;
+    text-decoration: none; */
+}
+header nav {
+    margin: 2px 0;
+}
+header nav ul {
+    display: flex;
+    background-color: (--glacier4);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+header nav ul li a {
+    padding: 6px 8px;
+    font-weight: lighter;
+    font-size: 1.22vw ;
+    color: var(--cobalt);
+    background: var(--glacier4);
+    border-radius: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    box-shadow: 2px 2px 5px darkblue;
+}
+header nav ul li a:hover {
+    background: var(--sage);
+    color: var(--bg);
+    border-radius: 15px;
+    text-shadow: none;
+    box-shadow: -1px -1px 10px;
+}
+/**/
+
+/*Hero and Page-Open Display*/
+#heroBack{
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+#heroBack img {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    z-index: -9991;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto 0px auto;
+}
+#moodSet {
+    justify-content: space-evenly;
+    align-items: center;
+}
+#selfTitle {
+    flex: 1 1 20%;
+    white-space: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--glacier);
+    font-weight: 600;
+    text-shadow: 2px 2px 17px darkblue;
+    text-decoration: none;
+    font-size: 7vw;
+}
+#selfTitle:hover {
+    color: var(--cobalt);
+    text-shadow: -2px -2px 15px var(--glacier);
+}
+#moodSet img {
+    flex: 0 0 33%;
+    font-size: 5vh;
+    display: block;
+    margin: 10pt auto 0pt auto;
+    border-radius: 50%;
+    box-shadow: 2px 3px 7px darkblue;
+    max-height: 32vh;
+}
+#moodCard section {
+    margin: 7vh;
+}
+#moodCard ul {
+    flex: 0 0 33%;
+    font-size: 5vh;
+    list-style-type: none;
+    margin: 5vh;
+    border-width: 5px;
+    border-bottom: var(--cobalt2);
+}
+#moodCard li {
+    flex: 0 0 33%;
+    margin:3vh auto 0px auto;
+    color: var(--coco);
+    text-shadow: 1px 1px 3px darkblue;
+}
+/**/
+
+/* .backText {
+    position: fixed;
+    margin-top: 1vh;
+    /* display: flex; 
+    color: var(--coco);
+    background: "";
+    opacity: 0.4;
+    font-family: 'Brush Script Mt', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-shadow: var(--coco2)1px 1px 2px;
+    font-size: 90pt;
+    z-index: -9999;
+} */
+
+/*About Section-Main*/
+#about-nick {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    contain: content;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#about-nick h2 {
+    color: var(--cobalt3);
+    text-shadow: 0 0 3px var(--cobalt4);
+    font-family: 'Gill Sans MT','Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 9.5vh auto 0vh auto;
+    font-size: 17vh;
+}
+#aboutCard {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    background-color:"";
+    margin: 0vh auto 0vh auto;
+    padding: 17pt;
+    border-radius: 30pt;
+}
+.about-pic img {
+    box-shadow: -1px -1px 3px var(--cobalt3);
+    max-height: 40vh;
+    border-radius: 24pt;
+    margin-left: 35vw;
+}
+.info-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--coco);
+    background: var(--sage4);
+    padding: 24pt;
+    border-radius: 27pt;
+    min-height: 25vh;
+}
+.info-box article {
+    position: relative;
+    display: inline-block;
+    background: var(--colorp3);
+    padding: 6pt;
+    font-size: 20px;
+    opacity: 0.8;
+}
+.info-box p {
+    line-height: 1.4;
+}
+/**/
+
+/*Works Display*/
+.work-display , footer {
+    box-sizing: border-box;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#samplesHolder {
+    margin-bottom: 0px;
+    color: var(--cobalt3);
+    text-shadow: 0 0 3px var(--cobalt4);
+    font-family: 'Gill Sans MT','Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2vh auto 0vh auto;
+    font-size: 7vh;
+}
+#projectHolder {
+    background-color: var(--glacier);
+    max-height: 70vh;
+    min-height: 65vh;
+    max-width: 90vw;
+    min-width: 90vw;
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.project-panel h3 {
+    padding: 20px;
+}
+.project-panel img {
+    width: 100%;
+    min-width: 400pt;
+    max-width: 400pt;
+}
+.project-panel {
+flex: 1 0 0;
+padding:10px;
+margin:5px;
+text-align: center;
+border-style: solid;
+border-width: 1px;
+max-height: 800px;
+background-color: var(--cobalt2);
+color: #fff;
+border-radius: 5px;
+}
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+}
+.contact-links {
+    font-size: 27px;
+    margin: 20px auto 5px auto;
+}
+.contact-links ul{
+    text-align: center;
+    list-style-type: none;
+}
+.contact-form {
+    text-align: center;
+    margin: 20px auto 5px auto;
+    background-color: var(--sage3);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px var(--sage4);
+}
+footer {
+    padding: 7px;
+}
+
+/**/
+
+/* @media screen and (min
+-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+      .step-text {
+        flex: 100%;  
+    }    
+}
+  
+
+@media screen and (min-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    contact-form {
+        order: 3;
+    }
+} */

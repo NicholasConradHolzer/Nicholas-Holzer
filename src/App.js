@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Header from "./components/Header/header.js";
+
 import Footer from "./components/Footer/footer.js";
 
 import About from "./pages/About/about.js";
@@ -22,9 +23,8 @@ function App() {
     if(currentCategory === "About"){
       return <About></About>
     }
-
-    
   }
+  
   return (
     <div>
       <Header

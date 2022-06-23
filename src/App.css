@@ -246,6 +246,12 @@ background-color: var(--cobalt2);
 color: #fff;
 border-radius: 5px;
 }
+.noDisp{
+  display: none;
+}
+/* .disp{
+  display: ;
+} */
 @media (max-width:960px) {
   .project-card {
     width: 100%;
