@@ -1,19 +1,20 @@
-import React from 'react';
+import React from "react";
+// import profile from '../utils/images/profile.png'
 
-const About = () => {
-
-	return (
-		<main className="mx-3 sm:mx-8 my-5 flex flex-wrap lg:flex-nowrap justify-center p-5 border-4 rounded-lg border-slate-500">
-			<img
-				className='mb-3 lg:mb-0 lg:mr-5 max-h-80 aspect-square'
-				src={require('../assets/me.png')}
-				alt="Headshot"
-			/>
-			<p className='text-darkgrey text-l sm:text-xl'>
-				
-			</p>
-		</main>
-	);
+export default function About(){
+    return(
+        
+        <div id="me">
+            {/* <img src={profile} /> */}
+            <h2>About Me</h2>
+				<p>
+					My Name is Nicholas Holzer; a student of Website Development, and Computing Technology Enthusiast.<br/>
+					My longterm goals include development of my own app systems and breaking ground in new AI cognizing methods.<br/>
+					Thank you very much for checking out my portfolio today; enjoy your visit, and <br/>
+					reach out if you like what you see!
+				</p>
+			<a id="returnBut" href="">Intro</a>
+        </div>
+        
+    )
 }
-
-export default About;

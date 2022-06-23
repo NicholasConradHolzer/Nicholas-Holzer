@@ -1,5 +1,5 @@
-import React from 'react';
-
+// import React from 'react';
+/*
 const Intro = () => {
     return (
         <main className="mx-3 sm:mx-8 my-5 flex flex-wrap lg:flex-nowrap justify-center p-5 border-4 rounded-lg border-slate-500">
@@ -14,5 +14,22 @@ const Intro = () => {
     </main> 
     );
 }
+*/
+// export default Intro;
 
-export default Intro;
+import React from "react";
+// import profile from '../utils/images/profile.png'
+
+export default function Intro(){
+    return(
+        
+
+        <div id="me">
+            {/* <img src={profile} /> */}
+            <h2>Nicholas Holzer</h2>
+            <p>intro-test-text
+            </p>
+        </div>
+        
+    )
+}
