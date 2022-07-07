@@ -41,9 +41,13 @@ export default function Contact()  {
 
 
     return(
-        <div className="contactPage">
-            <div>
-                <h2>Send me an Email</h2>
+        <div className="contact chapterSize">
+            <div id="contact-nick">
+              <h2 className="section-title">
+                  Contact Me
+              </h2>
+            </div>
+              <div className="contact-form"> 
                 <form id="contactform" ref={form} onSubmit={sendEmail}>
                     <input type="text" name="user_name" className="form" placeholder="Name" onBlur={handleChange} />
                     <input type="email" className="form" name="user_email" placeholder="Email" onBlur={handleChange}/>
@@ -53,10 +57,9 @@ export default function Contact()  {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                     )}
-                    <input type="submit" value="Send" />
+                    <input type="submit" value="Send Me an Email" />
                 </form>
             </div>
-			<a id="returnBut" href="">Intro</a>
         </div>
     )
 }

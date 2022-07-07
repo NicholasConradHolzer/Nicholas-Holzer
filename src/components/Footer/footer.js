@@ -1,13 +1,16 @@
 import React from "react";
 
 export default function Footer(){
+   
     return(
-        <footer id="footer">
-            <a href="">GitHub</a>
-            <br></br>
-            <a href="">LinkedIn</a>
-            <br></br>
-            <a href="">Facebook</a>
-        </footer>
+        <div className= "contact-links" id="footer">
+            
+                <p><a href="">GitHub</a></p>
+                <br></br>
+                <p><a href="">LinkedIn</a></p>
+                <br></br>
+                <p><a href="">Facebook</a></p>
+        </div>
+        
     )
 }

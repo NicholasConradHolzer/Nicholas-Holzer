@@ -8,7 +8,7 @@ export default function ProjMod(props){
         {/* <div className="project-card"> */}
             <a className="projectPortal" href={project.linkDeployed}>
             {/* <a className="pic" href={project.linkDeployed}> */}
-            <h2>{project.title}</h2>
+            <h3>{project.title}</h3>
             <img src={project.image} alt={project.alt} />
             </a>
             <p>{project.description}</p>
