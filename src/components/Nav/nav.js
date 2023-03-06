@@ -19,9 +19,7 @@ export default function Nav(props){
                 <li>
                     <a id="about" className={props.currentCategory === "About" ? 'navActive' : 'navInactive'} onClick={() =>props.setCurrentCategory("About")}>About</a>
                 </li>
-                <li>
-                    <a id="contact" className={props.currentCategory === "Contact" ? 'navActive' : 'navInactive'} onClick={() =>props.setCurrentCategory("Contact")}>Contact</a>
-                </li>
+          
                 <li>
                     <a id="projects" className={props.currentCategory === "Projects" ? 'navActive' : 'navInactive'} onClick={() =>props.setCurrentCategory("Projects")}>Projects</a>
                 </li>

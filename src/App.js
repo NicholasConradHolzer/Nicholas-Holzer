@@ -5,7 +5,7 @@ import Intro from "./components/Intro/intro.js";
 import Footer from "./components/Footer/footer.js";
 import trees from "./assets/images/TreesBG.jpg"
 import About from "./pages/About/about.js";
-import Contact from "./pages/Contact/contact.js";
+/*import Contact from "./pages/Contact/contact.js";*/
 import Projects from "./pages/Projects/projects.js";
 
 import "./App.css"
@@ -20,9 +20,9 @@ function App() {
     if(currentCategory === "About"){
       return <About></About>
     }
-    if(currentCategory === "Contact"){
+    /*if(currentCategory === "Contact"){
       return <Contact></Contact>
-    }
+    }*/
     if(currentCategory === "Projects"){
       return <Projects></Projects>
     }
