@@ -23,7 +23,7 @@ export default function Intro(){
             <img className="" src={profile} />
             <div id="moodCard" class="carderizer">
                 <ul>
-                    <li>Web-Site + Application Developer</li>
+                    <li>Technical Expert <a href="https://www.youtube.com/watch?v=bC2rlhbgmqs">&</a> IT Solutions</li>
                 </ul>
             </div>
         </div>

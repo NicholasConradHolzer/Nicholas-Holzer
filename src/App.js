@@ -27,6 +27,7 @@ function App() {
       return <Projects></Projects>
     }
   }
+  
   const noDispSwitch = () =>{
     if(currentCategory === "Intro"){
         return "noDisp"
